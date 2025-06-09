@@ -1,37 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Neptune Dev Test –
 
-## Getting Started
+A simple web app designed for the Neptune Dev Test.  
+Built with Next.js and TypeScript, this app accepts natural language queries and returns a synthesized list of service providers (dog groomers) with ratings, prices, and a custom Neptune Score. The UI is responsive and optimized for both desktop and mobile.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live Links
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🚀 **Live App:** [https://neptune-devtest.vercel.app](https://neptune-devtest.vercel.app)
+- ⚙️ **GitHub Repo:** [Neptune-Dev-Test_GITHUB_REPO_URL](https://github.com/smn-riaz/neptune-devtest)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Screenshot
 
-## Learn More
+![screencapture-neptune-devtest-vercel-app-2025-06-09-17_14_39](https://github.com/user-attachments/assets/2cc9a8f9-e67a-4c11-9200-08f6eadadd14)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Core Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 👤 User Functionality
+- Accepts natural language queries (example: *"Which Dog Groomers Have the Highest Ratings?"*)
+- Sends query to an API (Google Gen AI + scraped data sources)
+- Synthesizes results from at least 3 sources
+- Displays:
+  - Service provider name
+  - Ratings and reviews
+  - Price range
+  - Address
+  - Booking options
+  - **Neptune Score** (ranking metric)
+- FAQ section with copy-to-clipboard interaction
+- Fully responsive for mobile and desktop
 
-## Deploy on Vercel
+### 💎 Bonus Features
+- **Neptune Score:** Custom ranking metric to help users quickly identify the most reputable services.  
+  Formula:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  ```js
+  Neptune Score = round(rating × log(reviews))
+  ## 🧰 Technologies & Versions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# neptune-devtest" 
+### 🔧 Technologies
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Shadcn UI Components
+- Framer Motion
+
+---
+
+  ## 🛠️ Getting Started Locally
+
+### Prerequisites
+- Node.js
+
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/smn-riaz/neptune-devtest
+   
