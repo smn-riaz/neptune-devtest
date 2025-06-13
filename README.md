@@ -1,6 +1,6 @@
 # Neptune Dev Test
 
-A simple web app designed for the Neptune Dev Test.  
+Gemini AI integrated web app designed for the Neptune Dev Test.  
 Built with Next.js and TypeScript, this app accepts natural language queries and returns a synthesized list of service providers (dog groomers) with ratings, prices, and a custom Neptune Score. The UI is responsive and optimized for both desktop and mobile.
 
 ---
